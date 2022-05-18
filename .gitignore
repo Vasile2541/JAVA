@@ -1,4 +1,25 @@
 
+######################
+# Project Specific
+######################
+/build/www/**
+/src/test/javascript/coverage/
+/src/test/javascript/PhantomJS*/
+
+######################
+# Node
+######################
+/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
+
+######################
+# SASS
+######################
+.sass-cache/
+
+
 ##############################
 ## Visual Studio Code
 ##############################
@@ -9,6 +30,15 @@
 ## OS X
 ##############################
 .DS_Store
+.svn
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
 
 ##############################
 ## Java
@@ -20,10 +50,12 @@
 *.ear
 *.nar
 hs_err_pid*
+*.db
 
 ##############################
 ## Maven
 ##############################
+/log/
 target/
 pom.xml.tag
 pom.xml.releaseBackup
@@ -57,6 +89,8 @@ gradle-app.setting
 *.xml
 *.ipr
 *.iws
+*.ids
+*.orig
 
 
 ##############################
@@ -87,13 +121,28 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
-##############################
-## Visual Studio Code
-##############################
-.vscode/
-.code-workspace
+######################
+# ESLint
+######################
+.eslintcache
 
-##############################
-## OS X
-##############################
-.DS_Store
+######################
+# Directories
+######################
+/bin/
+/deploy/
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+
+
